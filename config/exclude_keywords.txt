@@ -9,3 +9,6 @@ manager
 vp
 head of
 chief
+azure
+gcp
+google cloud
