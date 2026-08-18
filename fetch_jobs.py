@@ -2,12 +2,12 @@ import pandas as pd
 from adzuna import fetch_adzuna_jobs
 from jooble import fetch_jooble_jobs
 
-def fetch_all_jobs():
+def fetch_all_jobs(keyword="cloud engineer"):
     print("Fetching from Adzuna...")
-    adzuna_df = fetch_adzuna_jobs()
+    adzuna_df = fetch_adzuna_jobs(keyword=keyword)
 
     print("Fetching from Jooble...")
-    jooble_df = fetch_jooble_jobs()
+    jooble_df = fetch_jooble_jobs(keyword=keyword)
 
     # Combine and remove duplicates
     all_jobs = pd.concat([jooble_df, adzuna_df], ignore_index=True)

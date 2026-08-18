@@ -7,7 +7,7 @@ with open("config/config.json") as f:
 ADZUNA_APP_ID = keys["adzuna"]["app_id"]
 ADZUNA_APP_KEY = keys["adzuna"]["app_key"]
 
-def fetch_adzuna_jobs(keyword="junior python", location="usa", results=20):
+def fetch_adzuna_jobs(keyword="cloud engineer", location="usa", results=20):
     url = f"https://api.adzuna.com/v1/api/jobs/us/search/1"
     params = {
         "app_id": ADZUNA_APP_ID,

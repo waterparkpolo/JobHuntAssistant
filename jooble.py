@@ -7,7 +7,7 @@ with open("config/config.json") as f:
     keys = json.load(f)
 JOOBLE_API_KEY = keys["jooble"]["api_key"]  # Make sure your config has this
 
-def fetch_jooble_jobs(keyword="junior python", location="usa", page=1, results=20):
+def fetch_jooble_jobs(keyword="cloud engineer", location="usa", page=1, results=20):
     url = f"https://jooble.org/api/{JOOBLE_API_KEY}"
     payload = {
         "keywords": keyword,
@@ -34,5 +34,5 @@ def fetch_jooble_jobs(keyword="junior python", location="usa", page=1, results=2
 
 # Example usage
 if __name__ == "__main__":
-    df = fetch_jooble_jobs(keyword="junior python", location="remote", page=1, results=20)
+    df = fetch_jooble_jobs(keyword="cloud engineer", location="remote", page=1, results=20)
     print(df)
