@@ -1,0 +1,14 @@
+{
+  "adzuna": {
+    "app_id": "YOUR_ADZUNA_APP_ID",
+    "app_key": "YOUR_ADZUNA_APP_KEY"
+  },
+  "jooble": {
+    "api_key": "YOUR_JOOBLE_API_KEY"
+  },
+  "email": {
+    "sender": "youraddress@gmail.com",
+    "password": "YOUR_GMAIL_APP_PASSWORD",
+    "recipient": "whereyouwantjobs@gmail.com"
+  }
+}
