@@ -23,7 +23,7 @@ def fetch_adzuna_jobs(keyword="junior python", location="usa", results=20):
         return pd.DataFrame()
 
     data = response.json().get("results", [])
-    jobs = [{"title": j["title"], "company": j["company"]["display_name"], "url": j["redirect_url"]}
+    jobs = [{"title": j["title"], "company": j["company"].get("display_name", "Unknown"), "url": j["redirect_url"]}
             for j in data]
 
     return pd.DataFrame(jobs)
