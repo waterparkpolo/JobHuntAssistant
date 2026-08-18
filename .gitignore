@@ -5,3 +5,4 @@ config/credentials.json
 __pycache__/
 *.pyc
 venv/
+data/*.csv
